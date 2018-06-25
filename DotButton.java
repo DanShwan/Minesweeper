@@ -75,14 +75,11 @@ public class DotButton extends JButton {
      */
 
     public DotButton(int column, int row, int iconNumber) {
- 
-    // ADD YOU CODE HERE
 
         this.column = column;
         this.row = row;
         this.iconNumber = iconNumber;
-        this.setIcon(getImageIcon());
-        
+        this.setIcon(getImageIcon()); 
     }
 
     /**
@@ -110,11 +107,8 @@ public class DotButton extends JButton {
      */
 
     public int getRow() {
- 
-    // ADD YOU CODE HERE
 
-        return this.row;
-        
+        return this.row;       
     }
 
     /**
@@ -124,11 +118,8 @@ public class DotButton extends JButton {
      */
 
     public int getColumn() {
- 
-    // ADD YOU CODE HERE
 
         return this.column;
-        
     }
 
     /**
@@ -146,6 +137,7 @@ public class DotButton extends JButton {
         }
         return icons[iconNumber];
     }
+     
     /**
      * This method returns the name of the file containing the image 
      * corresponding to the current value of the variable iconNumber.
